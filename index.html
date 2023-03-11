@@ -3,58 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Creative Website</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <div class="logo">
+          <h4>Creative</h4>
+        </div>
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </nav>
+      <div class="banner">
+        <h1>Welcome to Creative</h1>
+        <p>We are a creative agency</p>
+        <a href="#" class="btn btn1">Learn More</a>
+        <a href="#" class="btn btn2">Get Started</a>
+      </div>
     </header>
-    <main>
-      <section id="hero">
-        <h1>Welcome to My Website</h1>
-        <p>Here is some text about me and what I do.</p>
-        <a href="#" class="button">Learn More</a>
-      </section>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Here is some information about me and my background.</p>
-      </section>
-      <section id="blog">
-        <h2>Latest Blog Posts</h2>
-        <div class="post">
-          <h3>Post Title 1</h3>
-          <p>Here is a brief summary of the post.</p>
-          <a href="#" class="button">Read More</a>
+
+    <section class="services">
+      <h3>Our Services</h3>
+      <div class="row">
+        <div>
+          <img src="img/service1.jpg" alt="Service 1" />
+          <h4>Service 1</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet velit ac tortor consectetur blandit.
+          </p>
+          <a href="#" class="btn btn3">Learn More</a>
         </div>
-        <div class="post">
-          <h3>Post Title 2</h3>
-          <p>Here is a brief summary of the post.</p>
-          <a href="#" class="button">Read More</a>
+        <div>
+          <img src="img/service2.jpg" alt="Service 2" />
+          <h4>Service 2</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet velit ac tortor consectetur blandit.
+          </p>
+          <a href="#" class="btn btn3">Learn More</a>
         </div>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
-          <label for="message">Message</label>
-          <textarea id="message" name="message"></textarea>
-          <input type="submit" value="Send" class="button" />
-        </form>
-      </section>
-    </main>
+        <div>
+          <img src="img/service3.jpg" alt="Service 3" />
+          <h4>Service 3</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet velit ac tortor consectetur blandit.
+          </p>
+          <a href="#" class="btn btn3">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3>Get In Touch</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet
+        velit ac tortor consectetur blandit.
+      </p>
+      <a href="#" class="btn btn4">Contact Us</a>
+    </section>
+
     <footer>
-      <p>&copy; 2023 My Website. All rights reserved.</p>
+      <p>&copy; 2023 Creative. All rights reserved.</p>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
